@@ -1,4 +1,4 @@
-Ontario Inpatient Hospital Demand Forecasting (Canada)
+##Ontario Inpatient Hospital Demand Forecasting (Canada)##
 
 This project analyses long-term inpatient hospital discharge trends in Canada, with a focused case study on Ontario. The goal is to establish a reliable baseline forecast to support medium-term healthcare planning.
 
