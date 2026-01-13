@@ -1,87 +1,53 @@
-<<<<<<< HEAD
-# Provincial Inpatient Admission Forecasting in Canada
+Ontario Inpatient Hospital Demand Forecasting (Canada)
 
-## Overview
+This project analyses long-term inpatient hospital discharge trends in Canada, with a focused case study on Ontario. The goal is to establish a reliable baseline forecast to support medium-term healthcare planning.
 
-This project forecasts **monthly inpatient hospital admissions by province in Canada**.
-It supports provincial healthcare planning and capacity decisions.
+Project objective
 
-The analysis uses **official Canadian open healthcare data** and focuses on real planning questions faced by health system managers.
+Understand historical inpatient demand patterns
 
----
+Identify structural disruptions
 
-## Decision Supported
+Produce a baseline forecast for planning purposes
 
-How many inpatient hospital admissions should each province plan for in the next reporting period?
+Data
 
-This informs:
+Source: Canadian hospital inpatient discharge data
 
-* Capacity planning
-* Workforce direction
-* Budget preparation
+Coverage: 1995–2024
 
----
+Frequency: Annual
 
-## Dataset
+Geography: Canada, with province-level analysis
 
-Source
-**Canadian Institute for Health Information**
+COVID-19 years are treated as a structural disruption and excluded from model training.
 
+Methodology
 
-## Methodology
+Data cleaning and validation
 
-Steps followed:
+Exploratory Data Analysis to assess trends, concentration, and stability
 
-* Data cleaning and standardisation
-* Aggregation by province and month
-* Time-based feature engineering
-* Baseline and tree-based forecasting models
-* Comparison of predicted and actual admissions
+ETS (Error–Trend–Seasonal) modelling with additive trend
 
-The focus remains on decisions, not model complexity.
+Sensitivity analysis using a damped trend specification
 
----
+Key findings
 
-## Outputs
+Ontario drives national inpatient demand trends
 
-Decision-makers receive:
+Pre-COVID demand follows a stable, gradual growth pattern
 
-* Monthly admission forecasts by province
-* Visual trends highlighting seasonal pressure
-* A concise planning summary
+Post-COVID volumes deviate from baseline expectations
 
-Technical metrics are kept out of the final view.
+Forecast results are robust to alternative trend assumptions
 
----
-## Ethics and Governance
+Output
 
-* Uses official Canadian open data
-* Contains no personal or sensitive information
-* Aligns with Canadian data governance standards
+Five-year baseline forecast for Ontario inpatient discharges
 
----
+Planning-oriented interpretation, not operational prediction
 
-## Immigration and Professional Relevance
+Intended use
 
-This project shows:
-
-* Experience working with Canadian healthcare datasets
-* Applied data analytics for public sector planning
-* Alignment with provincial healthcare priorities
-
----
-
-## Tools Used
-
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* Matplotlib
-
----
-
-
-=======
-"# Provincial-Inpatient-Admission-Forecasting-in-Canada" 
->>>>>>> 3d795cf (Data loaded)
+This analysis is designed to support healthcare planning discussions, workforce considerations, and capacity assessment under normal operating conditions.
